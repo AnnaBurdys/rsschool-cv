@@ -33,7 +33,7 @@
   ```
   
   ## Work experience
-  My CV Project
+  [My CV Project](https://annaburdys.github.io/rsschool-cv/cv)
   
   
   ## Education
