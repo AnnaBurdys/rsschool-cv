@@ -9,14 +9,14 @@
 </head>
 <body>
 <header class="header">
-    <div class="container header-constraint">
+    <div class="container">
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="#contacts" class="nav-link">Contacts</a> 
+                    <a href="#summary" class="nav-link">Summary</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#summary" class="nav-link">Summary</a>
+                    <a href="#contacts" class="nav-link">Contacts</a> 
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
@@ -48,39 +48,17 @@
 
 <main class="main">
     <div class="container main-container">
-        <section class="section section-profile" id="profile">
-            <img src="assets/images/profilePic.jpg" alt class="section-profile-logo">
-            <div class="section-profile-title">
-                <h1 class="section-title main-title">
+        <section class="section" id="profile">
+            <div class="section">
+                <h1 class="section-title">
                     Anna Burdys
                 </h1>
                 <h3 class="section-subtitle">Junior Front-End Developer</h3>
+                <img src="assets/images/profilePic.jpg" alt class="section-profile-logo">
             </div>
         </section>
 
-        <section class="section" id="contacts">
-            <h2 class="section-title">Contacts</h2>
-            <ul class="section-list">
-                <li class="section-item contacts-item">
-                    Minsk, Belarus
-                </li>
-                <li class="section-item contacts-item">
-                    E-mail:
-                    <a href="mailto:annaburdys@gmail.com" title="email">annaburdys@gmail.com</a>
-                </li>
-                <li class="section-item contacts-item">
-                    Github:
-                    <a href="https://github.com/AnnaBurdys" title="github">AnnaBurdys</a>
-                </li>
-                <li class="section-item contacts-item">
-                    Telegram: <a href="https://t.me/annaburdys" title="telegram">@annaburdys</a>
-                </li>
-                <li class="section-item contacts-item">
-                    Discord: <a href="https://discord.gg/zUr7wWYPXE" title="discord">GodDamnAnnyshka#7580 </a>
-                </li>
-            </ul>
-        </section>
-
+      
         <section class="section" id="summary">
             <h2 class="section-title">Summary</h2>
             <p>
@@ -91,6 +69,30 @@
                 knowledge in IT sphere. 
             </p>
         </section>
+
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="section-list">
+                <li class="section-item">
+                    Minsk, Belarus
+                </li>
+                <li class="section-item">
+                    E-mail:
+                    <a href="mailto:annaburdys@gmail.com" title="email">annaburdys@gmail.com</a>
+                </li>
+                <li class="section-item">
+                    Github:
+                    <a href="https://github.com/AnnaBurdys" title="github">AnnaBurdys</a>
+                </li>
+                <li class="section-item">
+                    Telegram: <a href="https://t.me/annaburdys" title="telegram">@annaburdys</a>
+                </li>
+                <li class="section-item">
+                    Discord: <a href="https://discord.gg/zUr7wWYPXE" title="discord">GodDamnAnnyshka#7580 </a>
+                </li>
+            </ul>
+        </section>
+
 
         <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
@@ -109,13 +111,14 @@
 
         <section class="section" id="code">
             <h2 class="section-title">Code</h2>
-            <pre class="pre"><code>function factorial(n) {
-                if(n &lt; 0) return null;
-                if (n &lt;= 1) return 1;
-                return n * factorial(n-1);
-              }</code></pre>
+            <pre class="pre">
+<code class="pre-code">public static void count() {
+    int i = (int) (Math.random() * 10 + 1);
+    System.out.println("Random number:" + i);
+        }
+    }
+</code></pre>
         </section>
-
         <section class="section" id="courses">
             <h2 class="section-title">Courses</h2>
             <ul class="section-list">
@@ -137,12 +140,12 @@
               </ul>
         </section>
 
-        <section class="section section-education" id="education">
+        <section class="section" id="education">
             <h2 class="section-title">Education</h2>
             <p>Belarussian State University of Informatics and Radioelectronics, Economics of Electronic Business</p>
         </section>
 
-        <section class="section section-english" id="english">
+        <section class="section" id="english">
             <h2 class="section-title">English</h2>
             <p> I have a certificate which rates my skills as C1-C2 level of Language Proficiency.</p>
         </section>
@@ -150,19 +153,14 @@
 
 </main>
 
-
 <footer class="footer">
     <div class="container footer-container">
         <div>
             © 2022
-            <a href="https://github.com/AnnaBurdys" class="github nav-link">
-                Anna Burdys
-            </a>
     </div>
     <a href="https://rs.school/js/" class="rss">
     <img src="assets/images/rsschool.svg" alt="Rsschool Icon" width="73" height="26"></a>
     </div>
 </footer>
-
 </body>
 </html>
